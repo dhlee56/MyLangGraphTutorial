@@ -1204,12 +1204,14 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "langchain", extra = ["anthropic", "google-genai", "mistralai", "openai"] },
+    { name = "pydantic" },
     { name = "python-dotenv" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "langchain", extras = ["anthropic", "google-genai", "mistralai", "openai"], specifier = ">=1.4.3" },
+    { name = "pydantic", specifier = ">=2.13.5" },
     { name = "python-dotenv", specifier = ">=1.2.3" },
 ]
 
